@@ -7,7 +7,10 @@ import {
   Settings, 
   Home,
   TrendingUp,
-  Calendar
+  Calendar,
+  DollarSign,
+  Target,
+  Phone
 } from "lucide-react";
 import {
   Sidebar,
@@ -23,9 +26,11 @@ import {
 
 const navigationItems = [
   { title: "Overview", url: "/", icon: Home },
+  { title: "Sales Dashboard", url: "/sales", icon: DollarSign },
   { title: "Analytics", url: "/analytics", icon: BarChart3 },
-  { title: "Repositories", url: "/repositories", icon: GitBranch },
-  { title: "Contributors", url: "/contributors", icon: Users },
+  { title: "Pipeline", url: "/pipeline", icon: Target },
+  { title: "Team Performance", url: "/team", icon: Users },
+  { title: "Calls & Meetings", url: "/calls", icon: Phone },
   { title: "Activity", url: "/activity", icon: Activity },
   { title: "Trends", url: "/trends", icon: TrendingUp },
   { title: "Schedule", url: "/schedule", icon: Calendar },
@@ -56,14 +61,14 @@ export function AppSidebar() {
         <div className="mb-8">
           <div className="flex items-center gap-3 px-3">
             <div className="w-8 h-8 bg-gradient-primary rounded-lg flex items-center justify-center">
-              <GitBranch className="h-5 w-5 text-white" />
+              <DollarSign className="h-5 w-5 text-white" />
             </div>
             {!isCollapsed && (
               <div>
                 <h2 className="font-bold text-lg bg-gradient-primary bg-clip-text text-transparent">
-                  Julius Analytics
+                  SalesForce Pro
                 </h2>
-                <p className="text-xs text-muted-foreground">GitHub Dashboard</p>
+                <p className="text-xs text-muted-foreground">Sales Analytics Platform</p>
               </div>
             )}
           </div>

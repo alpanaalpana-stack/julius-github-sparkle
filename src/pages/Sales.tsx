@@ -1,7 +1,7 @@
 import { DashboardLayout } from "@/components/DashboardLayout";
 import { SalesDashboard } from "@/components/SalesDashboard";
 
-const Index = () => {
+const Sales = () => {
   return (
     <DashboardLayout>
       <SalesDashboard />
@@ -9,4 +9,4 @@ const Index = () => {
   );
 };
 
-export default Index;
+export default Sales;
